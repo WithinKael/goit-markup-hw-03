@@ -1,0 +1,240 @@
+/* ======================= COLORS ================== */
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: #2e2f42;
+  --grey: #2e2f42;
+  --white: #ffffff;
+  --dairy: #fcfcfc;
+}
+
+/* ======================= DEFAULT STYLE ================== */
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--slate);
+  background-color: var(--white);
+  font-style: normal;
+  font-weight: 400;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  background-color: var(--iris);
+  color: var(--white);
+}
+
+button:hover,
+button:focus {
+  background-color: var(--ocean);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--ocean);
+}
+
+/* ======================= HEADER ================== */
+
+.header-nav {
+  background-color: var(--white-background);
+}
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+
+.header-logo span {
+  color: var(--navy-blue);
+}
+
+.header-nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.header-address-contact {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+address {
+  font-style: normal;
+}
+
+/* ======================= SECTION1 ================== */
+
+.section-hero {
+  background-color: var(--navy-blue);
+}
+
+.section-hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.02em;
+  line-height: 1.07;
+  color: var(--white);
+}
+
+.section-hero-btn {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+/* ======================= SECTION2 ================== */
+
+.section-one-title {
+  opacity: 0;
+  pointer-events: none;
+  letter-spacing: 0.02em;
+}
+
+.section-one-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.section-one-text {
+  color: var(--slate);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* ======================= SECTION3 ================== */
+.section-two-title {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.11;
+  color: var(--navy-blue);
+  text-transform: capitalize;
+}
+
+/* ======================= SECTION4 ================== */
+
+.section-three {
+  background: var(--cloud);
+}
+
+.section-three-title {
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+}
+
+.section-three-team {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.section-three-text {
+  color: var(--slate, #434455);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.section-three-wrapper {
+  background-color: var(--white);
+}
+
+/* ======================= FOOTER ================== */
+
+.footer {
+  background: var(--navy-blue);
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+.footer-logo span {
+  color: var(--cloud);
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+}
+
+/* ======================= PORTFOLIO ================== */
+
+.portfolio-filter-btn {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--iris, #4d5ae5);
+  background-color: var(--cloud);
+}
+
+.portfolio-filter-btn:hover,
+.portfolio-filter-btn:focus {
+  color: var(--white);
+}
+
+.portfolio-description-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navyblue, #2e2f42);
+}
+
+.portfolio-description-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
