@@ -21,8 +21,7 @@ h2,
 h3,
 h4,
 p {
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0;
 }
 
 ul,
@@ -45,8 +44,8 @@ body {
 }
 
 button {
-  font-family: "Roboto", sans-serif;
   cursor: pointer;
+  border: none;
   background-color: var(--iris);
   color: var(--white);
 }
@@ -71,12 +70,31 @@ button:focus {
   color: var(--ocean);
 }
 
+.section {
+  padding: 120px 0;
+}
+
 /* ======================= HEADER ================== */
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .header-nav {
-  background-color: var(--white-background);
+  background-color: var(--white);
+  display: flex;
 }
+
 .header-logo {
+  margin-right: 76px;
+  padding: 24px 0;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -91,7 +109,9 @@ button:focus {
   color: var(--navy-blue);
 }
 
-.header-nav-link {
+.header-list-link {
+  display: inline-block;
+  padding: 24px 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -100,6 +120,8 @@ button:focus {
 }
 
 .header-address-contact {
+  display: inline-block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -110,29 +132,45 @@ address {
   font-style: normal;
 }
 
-/* ======================= SECTION1 ================== */
+.address-list,
+.header-list {
+  display: flex;
+  gap: 40px;
+}
+
+/* ======================= SECTION HERO ================== */
 
 .section-hero {
   background-color: var(--navy-blue);
+  text-align: center;
+  padding: 188px 0;
 }
 
 .section-hero-title {
   font-size: 56px;
   font-weight: 700;
-  text-align: center;
   letter-spacing: 0.02em;
   line-height: 1.07;
   color: var(--white);
+  margin-bottom: 48px;
 }
 
 .section-hero-btn {
+  min-width: 169px;
+  border-radius: 4px;
+  padding: 16px 32px;
   font-size: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   font-weight: 500;
   letter-spacing: 0.04em;
   line-height: 1.5;
 }
 
-/* ======================= SECTION2 ================== */
+/* ======================= SECTION ONE ================== */
+
+.section-one {
+  padding-bottom: 0;
+}
 
 .section-one-title {
   opacity: 0;
@@ -140,7 +178,17 @@ address {
   letter-spacing: 0.02em;
 }
 
+.section-one-container {
+  display: flex;
+  column-gap: 24px;
+}
+
+.section-one-item {
+  flex-basis: calc((100% - 24px * 3) / 4);
+}
+
 .section-one-subtitle {
+  margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -155,7 +203,7 @@ address {
   letter-spacing: 0.02em;
 }
 
-/* ======================= SECTION3 ================== */
+/* ======================= SECTION TWO ================== */
 .section-two-title {
   font-size: 36px;
   text-align: center;
@@ -166,7 +214,7 @@ address {
   text-transform: capitalize;
 }
 
-/* ======================= SECTION4 ================== */
+/* ======================= SECTION THREE ================== */
 
 .section-three {
   background: var(--cloud);
@@ -231,6 +279,11 @@ address {
 
 /* ======================= PORTFOLIO ================== */
 
+.portfolio-hero-title {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .portfolio-filter-btn {
   font-size: 16px;
   font-weight: 500;
@@ -259,3 +312,4 @@ address {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
+
