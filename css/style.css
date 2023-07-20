@@ -94,6 +94,7 @@ header {
 .header-nav {
   background-color: var(--white);
   display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -152,12 +153,12 @@ address {
 }
 
 .section-hero-title {
+  margin-bottom: 48px;
   font-size: 56px;
   font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1.07;
   color: var(--white);
-  margin-bottom: 48px;
 }
 
 .section-hero-btn {
@@ -174,6 +175,7 @@ address {
 /* ======================= SECTION ONE ================== */
 
 .section-one {
+  padding-top: 120px;
   padding-bottom: 0;
 }
 
@@ -185,7 +187,7 @@ address {
 
 .section-one-container {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .section-one-item {
@@ -222,7 +224,7 @@ address {
 
 .section-two-container {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 /* ======================= SECTION THREE ================== */
@@ -246,7 +248,7 @@ address {
 
 .section-three-container {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .section-three-description {
@@ -271,15 +273,16 @@ address {
 }
 
 .section-three-wrapper {
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--white);
 }
 
 /* ======================= FOOTER ================== */
 
 .footer {
-  background: var(--navy-blue);
-  padding-top: 101.5px; /* Вопрос норм чи не */
+  padding-top: 100px; /* Вопрос норм чи не */
   padding-bottom: 100px;
+  background: var(--navy-blue);
 }
 
 .footer-container {
@@ -314,7 +317,7 @@ address {
 
 .portfolio-hero {
   /*   Вопрос норм чи не */
-  padding-top: 70px;
+  padding-top: 96px;
   padding-bottom: 120px;
 }
 
