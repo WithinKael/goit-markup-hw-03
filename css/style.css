@@ -75,6 +75,10 @@ button:focus {
 }
 
 /* ======================= HEADER ================== */
+header {
+  border-bottom: 1px solid var(--cornflower);
+}
+
 .container {
   max-width: 1158px;
   margin: 0 auto;
@@ -110,6 +114,7 @@ button:focus {
 }
 
 .header-list-link {
+  /*  Почему бы не задать ul text align center а li не задать height 100% */
   display: inline-block;
   padding: 24px 0;
   font-size: 16px;
@@ -205,6 +210,7 @@ address {
 
 /* ======================= SECTION TWO ================== */
 .section-two-title {
+  margin-bottom: 72px;
   font-size: 36px;
   text-align: center;
   font-weight: 700;
@@ -214,6 +220,11 @@ address {
   text-transform: capitalize;
 }
 
+.section-two-container {
+  display: flex;
+  column-gap: 24px;
+}
+
 /* ======================= SECTION THREE ================== */
 
 .section-three {
@@ -221,6 +232,8 @@ address {
 }
 
 .section-three-title {
+  /*  Почему тут не нужен padding top 120px */
+  margin-bottom: 72px;
   text-align: center;
   font-size: 36px;
   font-style: normal;
@@ -231,7 +244,18 @@ address {
   color: var(--navy-blue);
 }
 
+.section-three-container {
+  display: flex;
+  column-gap: 24px;
+}
+
+.section-three-description {
+  padding: 32px 0;
+  text-align: center;
+}
+
 .section-three-team {
+  margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -254,6 +278,14 @@ address {
 
 .footer {
   background: var(--navy-blue);
+  padding-top: 101.5px; /* Вопрос норм чи не */
+  padding-bottom: 100px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17.5px;
 }
 
 .footer-logo {
@@ -271,6 +303,7 @@ address {
 }
 
 .footer-text {
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -278,6 +311,12 @@ address {
 }
 
 /* ======================= PORTFOLIO ================== */
+
+.portfolio-hero {
+  /*   Вопрос норм чи не */
+  padding-top: 70px;
+  padding-bottom: 120px;
+}
 
 .portfolio-hero-title {
   opacity: 0;
@@ -309,6 +348,19 @@ address {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   border: 1px solid transparent;
+}
+
+.gallary-list {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.gallary-description {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
 }
 
 .portfolio-description-title {
