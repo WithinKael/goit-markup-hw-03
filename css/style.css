@@ -147,9 +147,9 @@ address {
 /* ======================= SECTION HERO ================== */
 
 .section-hero {
+  padding: 188px 0;
   background-color: var(--navy-blue);
   text-align: center;
-  padding: 188px 0;
 }
 
 .section-hero-title {
