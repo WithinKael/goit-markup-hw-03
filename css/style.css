@@ -149,10 +149,11 @@ address {
 .section-hero {
   padding: 188px 0;
   background-color: var(--navy-blue);
-  text-align: center;
 }
 
 .section-hero-title {
+  max-width: 496px;
+  margin: 0 auto;
   margin-bottom: 48px;
   font-size: 56px;
   font-weight: 700;
@@ -162,6 +163,8 @@ address {
 }
 
 .section-hero-btn {
+  display: block;
+  margin: 0 auto;
   min-width: 169px;
   border-radius: 4px;
   padding: 16px 32px;
@@ -175,14 +178,20 @@ address {
 /* ======================= SECTION ONE ================== */
 
 .section-one {
-  padding-top: 120px;
-  padding-bottom: 0;
+  padding: 120px 0;
 }
 
-.section-one-title {
-  opacity: 0;
-  pointer-events: none;
-  letter-spacing: 0.02em;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section-one-container {
@@ -211,6 +220,11 @@ address {
 }
 
 /* ======================= SECTION TWO ================== */
+
+.section-two {
+  padding-top: 0;
+}
+
 .section-two-title {
   margin-bottom: 72px;
   font-size: 36px;
@@ -280,18 +294,14 @@ address {
 /* ======================= FOOTER ================== */
 
 .footer {
-  padding-top: 100px; /* Вопрос норм чи не */
+  padding-top: 100px;
   padding-bottom: 100px;
   background: var(--navy-blue);
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  row-gap: 17.5px;
-}
-
 .footer-logo {
+  display: block;
+  margin-bottom: 17.5px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -306,7 +316,7 @@ address {
 }
 
 .footer-text {
-  width: 264px;
+  max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -316,14 +326,8 @@ address {
 /* ======================= PORTFOLIO ================== */
 
 .portfolio-hero {
-  /*   Вопрос норм чи не */
   padding-top: 96px;
   padding-bottom: 120px;
-}
-
-.portfolio-hero-title {
-  opacity: 0;
-  pointer-events: none;
 }
 
 .filter-list {
