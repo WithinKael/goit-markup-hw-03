@@ -300,8 +300,8 @@ address {
 }
 
 .footer-logo {
-  display: block;
-  margin-bottom: 17.5px;
+  display: inline-block;
+  margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
